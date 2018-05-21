@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="label_bim_under">체중미달</string>
+    <string name="label_bim_normal">적정체중</string>
+    <string name="label_bim_fat1">제1도비만</string>
+    <string name="label_bim_fat2">제2도비만</string>
+    <string name="label_bim_fat3">제3도비만</string>
+    <string name="label_bim_fat4">제4도비만</string>
+    <string name="button_display">결과를 다음화면에 디스플레이</string>
+    <string name="label_description">BMI를 계산한다.</string>
+    <string name="label_height">신장(CM)</string>
+    <string name="label_weight">체중(KG)</string>
+    <string name="button_calculate">계산</string>
+    <string name="button_close_dialog">닫기</string>
+    <string name="label_bim_description">당신의 비만도는</string>
+    <string name="label_before_height">이전에 신장은</string>
+    <string name="label_before_weight">이전에 체중은</string>
+    <string name="button_save_result">입력값을 기록하고 돌아가기</string>
+    <string name="buton_not_save_return">입력값을 기록하지 않고 돌아가기</string>
+</resources>
