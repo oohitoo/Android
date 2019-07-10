@@ -10,7 +10,7 @@
 속성명 | 사용법
 ---| :---: |
 layout_gravity(뷰가 모두 채워지지 않을때 사용) | 왼쪽 `android:layout_gravity = "left"`<br>가운데 `android:layout_gravity = "center"`<br>오른쪽 `android:layout_gravity = "right"`
-gravity(내용물을 정렬함) | 왼쪽 `android:gravity = "left"`<br>가운데 `android:gravity = "center"`<br>오른쪽 `android:gravity = "right"`<br>가로세로 가운데 `android:gravity = "center_horizontal | center_vertical"`
+gravity(내용물을 정렬함) | 왼쪽 `android:gravity = "left"`<br>가운데 `android:gravity = "center"`<br>오른쪽 `android:gravity = "right"`<br>가로세로 가운데`android:gravity = "center_horizontal | center_vertical"`
 
 #### Layout 종류
 ------------
@@ -32,11 +32,7 @@ fill_vertical / fill_horizontal | 수직방향 여유 공간만큼 확대 후 �
 center | 수직방향 수평방향 중앙
 fill | 수직방향 수평방향 여우 공간만큼 확대
 clip_vertical | 공간이 남을때 남는부분 잘라내기 <br> top, clip_vertical `아래쪽`에 남은공간 잘라내기<br>button, clip_vertical `위쪽`에 남은공간 잘라내기<br>center_vertical, clip_vertical `위쪽 아래쪽`에 남은공간 잘라내기
-clip_horizontal | 공간이 남을때 남는부분 잘라내기
-  | right, clip_horizontal `왼쪽`에 남은공간 잘라내기
-  | left, clip_horizontal `오른쪽`에 남은공간 잘라내기
-  | center_horizontal, clip_horizontal `왼쪽 오른쪽`에 남은공간 잘라내기
-
+clip_horizontal | 공간이 남을때 남는부분 잘라내기 <br>right, clip_horizontal `왼쪽`에 남은공간 잘라내기<br>left, clip_horizontal `오른쪽`에 남은공간 잘라내기<br> center_horizontal, clip_horizontal `왼쪽 오른쪽`에 남은공간 잘라내기
 
 #### RelativeLayout 속성
 속성 값 | 설명
