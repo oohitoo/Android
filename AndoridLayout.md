@@ -22,7 +22,7 @@ gravity(내용물을 정렬함) | 왼쪽 `android:gravity = "left"`
 ---| :---: |
 `ConstraintLayout` | 기본 디폴트 레이아웃
 `LinearLayout` | 가로,세로 한방향으로 뷰를 구현 
-  | 가로 방향 `android:orientation = "horizontal"`, 세로방향 `android:orientation = "vertical"`
+`LinearLayout` | 가로 방향 `android:orientation = "horizontal"`, 세로방향 `android:orientation = "vertical"`
 `RelativeLayout` | 상대적 위치로 화면을 구현
 `FrameLayout` | 상위에 있는 뷰 or 뷰그룹 (여러개 Layout을 하나의 Layout 구현)
 `TableLayout` | Html의 표와 동일함. 사용하는 경우가 거의 없음
@@ -37,7 +37,7 @@ center | 수직방향 수평방향 중앙
 fill | 수직방향 수평방향 여우 공간만큼 확대
 clip_vertical | 공간이 남을때 남는부분 잘라내기
   | top, clip_vertical `아래쪽`에 남은공간 잘라내기
-  | button, clip_vertical `위쪽`에 남은공간 잘라내기
+    | button, clip_vertical `위쪽`에 남은공간 잘라내기
   | center_vertical, clip_vertical `위쪽 아래쪽`에 남은공간 잘라내기
 clip_horizontal | 공간이 남을때 남는부분 잘라내기
   | right, clip_horizontal `왼쪽`에 남은공간 잘라내기
