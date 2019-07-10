@@ -6,6 +6,7 @@
 
 #### 뷰의 영역 (그림의로 대체)
 ![뷰의 영역 구문](http://mooc.phinf.nhnnext.org/20180124_264/1516784342945mAiMu_JPEG/2.jpg?type=w760)<br>
+
 속성명 | 사용법
 ---| :---: |
 layout_gravity(뷰가 모두 채워지지 않을때 사용) | 왼쪽 `android:layout_gravity = "left"`
@@ -32,13 +33,13 @@ gravity(내용물을 정렬함) | 왼쪽 `android:gravity = "left"`
 ---| :---: |
 top / bottom / left / right | 객체를 위쪽, 아래쪽, 왼쪽, 오른쪽
 center_vertical / center_horizontal | 객체를 수직 중앙, 수평 중앙
-fill_vertical / fill_horizontal | 수직방향 여유 공간만큼 확대 후 채우기, 수평방향 여유공간만큼 확대 후 채우기
+fill_vertical / fill_horizontal | 수직방향 여유 공간만큼 확대 후 채우기<br>, 수평방향 여유공간만큼 확대 후 채우기
 center | 수직방향 수평방향 중앙
 fill | 수직방향 수평방향 여우 공간만큼 확대
-clip_vertical | 공간이 남을때 남는부분 잘라내기
-  | top, clip_vertical `아래쪽`에 남은공간 잘라내기
-    | button, clip_vertical `위쪽`에 남은공간 잘라내기
-  | center_vertical, clip_vertical `위쪽 아래쪽`에 남은공간 잘라내기
+clip_vertical | 공간이 남을때 남는부분 잘라내기<br>
+top, clip_vertical `아래쪽`에 남은공간 잘라내기<br>
+button, clip_vertical `위쪽`에 남은공간 잘라내기<br>
+center_vertical, clip_vertical `위쪽 아래쪽`에 남은공간 잘라내기
 clip_horizontal | 공간이 남을때 남는부분 잘라내기
   | right, clip_horizontal `왼쪽`에 남은공간 잘라내기
   | left, clip_horizontal `오른쪽`에 남은공간 잘라내기
