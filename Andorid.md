@@ -148,3 +148,99 @@
     });
 
 ```
+
+> 플래그먼트 (탭 여러개) 만들어 보자
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/tabDag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dog">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/tabRabbit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rabbit"></ImageView>
+
+            <ImageView
+                android:id="@+id/tabCat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cat"></ImageView>
+
+            <ImageView
+                android:id="@+id/tabhorse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/horse"></ImageView>
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#FFEB3B"></TabWidget>
+
+    </LinearLayout>
+</TabHost>
+```
+
+java코드를 살펴보자
+```java
+//위에 어노테이션 을 설정해주자
+@SuppressWarnings("deprecation")
+public class MainActivity extends TabActivity {
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activy_main2);
+
+        TabHost tabHost = getTabHost();
+        // R.id.tabDag -> ImaveView의 id랑 같아야한다.
+        TabHost.TabSpec tabSpecDag = tabHost.newTabSpec("tabDag").setIndicator("강아지");
+        tabSpecDag.setContent(R.id.tabDag);
+        tabHost.addTab(tabSpecDag);
+                                                        
+        // R.id.tabDag -> ImaveView의 id랑 같아야한다.
+        TabHost.TabSpec tabSpecRabbit = tabHost.newTabSpec("tabRabbit").setIndicator("토끼");
+        tabSpecRabbit.setContent(R.id.tabRabbit);
+        tabHost.addTab(tabSpecRabbit);
+
+        // R.id.tabDag -> ImaveView의 id랑 같아야한다.
+        TabHost.TabSpec tabSpecCat = tabHost.newTabSpec("tabCat").setIndicator("고양이");
+        tabSpecCat.setContent(R.id.tabCat);
+        tabHost.addTab(tabSpecCat);
+
+        // R.id.tabDag -> ImaveView의 id랑 같아야한다.
+        TabHost.TabSpec tabSpecHorse = tabHost.newTabSpec("tabhorse").setIndicator("말");
+        tabSpecHorse.setContent(R.id.tabhorse);
+        tabHost.addTab(tabSpecHorse);
+
+        // 붙여주자 
+        tabHost.setCurrentTab(0);
+}
+```
